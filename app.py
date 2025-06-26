@@ -5,6 +5,17 @@ import requests
 from datetime import datetime
 from dotenv import load_dotenv
 from langgraph_agent import run_agent
+import streamlit as st
+
+st.set_page_config(page_title="Appointment Bot", page_icon="📅")
+
+st.title("📅 Appointment Bot")
+st.write("Welcome! This assistant helps you book meetings.")
+
+user_input = st.text_input("What would you like to do?")
+
+if user_input:
+    st.write("You said:", user_input)
 
 # Load environment variables
 load_dotenv()
