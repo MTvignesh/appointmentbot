@@ -1,0 +1,11 @@
+streamlit
+requests
+python-dotenv
+langchain
+langchain-openai
+openai
+git init
+git remote add origin https://github.com/MTvignesh/appointment-bot.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
